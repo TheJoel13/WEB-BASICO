@@ -1,0 +1,79 @@
+<!-- PRESENTACION LOGIN PARA CTA  ANGEL JOEL BALDERRAMA RESENDIZ-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Boostrap</title>
+    <!--recuros de boostrap utilizados-->
+    <link href="../practica3/boostrap/css/bootstrap.min.css" rel="stlyesheet">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.css">
+    <!--color de fondo sacado de ugradients-->
+    <style>
+        body{
+            background: #5A3F37; 
+            background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
+            background: linear-gradient(to right, #2C7744, #5A3F37);
+
+        }
+        .bg{
+            background-image: url(../practica3/img/cucea4.jpg);
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- estilo , imagenes -->
+     <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end">
+                    <img src="img/cucea2.png" width="250" alt="">
+                </div>
+
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                    <!-- Inicia Login-->
+                    <!--nose porque el center se ve rojo pero funciono-->
+                    <center>
+                    <form action="logica/loguear.php" method="POST">
+                    <div class="mb-4">
+                        <label for="usuario" class="form-label">Usuario</label>
+                        <input type="text" name ="usuario" id="usuario" placeholder="ingresa usuario">
+                    </div>
+                    <div class="mb-4">
+                        <!--boton de password-->
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Ingresa contraseña">
+                    </div>
+                    
+                     <div class="mb-4 form-check">
+                        <!-- este mantener sesion alch no sirve pero lo deje porque se ve bonito-->
+                        <input type="checkbox" name="connected" class="form-check-input-center">
+                        <label for="connected" class="form-check-label">Mantener sesion iniciada</label>
+                     </div>
+
+                   <div class="d-grid">
+                    <button type="submit"class="btn btn-primary">Iniciar Sesion</button>
+                   </div>
+                
+                     
+                </center>
+                <!--Termina login-->
+                </form>
+            </div>        
+        </div>
+     </div>
+    
+        <!--recuross de boostrap utilizados-->
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!--fin del archivo-->
+
+
+
